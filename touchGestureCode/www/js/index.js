@@ -6,6 +6,9 @@ $(document).on("pagecreate","#pageone",function(){
     	console.log("tap");
         var r= random();
         alert(r);
+        navigator.notification.beep(1);	//beep once
+        navigator.notification.beep(2);	//beep twice
+
  	}); 
 
 });
