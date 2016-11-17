@@ -3,7 +3,13 @@
 $(document).on("pagecreate","#pageone",function(){
   
 	$('#tapt').on("tap",function(){
-    	$(this).css('color', 'red');
+    	console.log("tap");
+        var r= random();
+        alert(r);
  	}); 
 
 });
+
+function random() {
+	return !Math.round(Math.random());
+}
